@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DisplayingPractice</title>
+</head>
+<body>
+    <div id="message1"> &nbsp;</div>
+    <div id="message2"> &nbsp;</div>
+    <div id="message3"> &nbsp;</div>
+    <div id="message4"> &nbsp;</div>
+    <button type="button" onclick="showMessage1();">Click 1!</button>
+    <button type="button" onclick="showMessage2();">Click 2!</button>
+    <button type="button" onclick="showMessage3();">Click 3!</button>
+    <button type="button" onclick="showMessage4();">Click 4!</button>
+    <script>
+        function showMessage1(){
+            alert("Message 1");
+        }
+        function showMessage2(){
+            document.getElementById('message2').innerHTML = 'Message 2';
+        }
+        function showMessage3(){
+            document.writeln('Message 3');
+        }
+        function showMessage4(){
+            console.log('Message log');
+        }
+    </script>
+</body>
+</html>
